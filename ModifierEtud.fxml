@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1079.0" style="-fx-background-color: #15213b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierEtudController">
+   <children>
+      <AnchorPane prefHeight="636.0" prefWidth="266.0" style="-fx-background-color: #000000;" />
+      <TextField fx:id="nom" disable="true" layoutX="442.0" layoutY="149.0" />
+      <TextField fx:id="prenom" disable="true" layoutX="442.0" layoutY="293.0" />
+      <ChoiceBox fx:id="filiere" disable="true" layoutX="767.0" layoutY="149.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="semestre" disable="true" layoutX="767.0" layoutY="293.0" prefWidth="150.0" />
+      <Label layoutX="495.0" layoutY="101.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="248.0" text="prenom" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="816.0" layoutY="101.0" text="Filière" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" layoutY="248.0" text="Semestre" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="modifierBtn" disable="true" layoutX="620.0" layoutY="411.0" mnemonicParsing="false" onAction="#modifier" prefHeight="26.0" prefWidth="117.0" text="Modifier" />
+      <TextField fx:id="id" layoutX="611.0" layoutY="48.0" />
+      <Label layoutX="518.0" layoutY="45.0" text="ID:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="789.0" layoutY="47.0" mnemonicParsing="false" onAction="#chercher" prefHeight="26.0" prefWidth="117.0" text="Chercher" />
+      <ImageView fitHeight="643.0" fitWidth="968.0" layoutX="-699.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image%20java/0_F95wvRoRjeEadaVi.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="89.0" layoutY="264.0" text="Modifier" textFill="WHITE" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="317.0" text="Etudiant" textFill="WHITE" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

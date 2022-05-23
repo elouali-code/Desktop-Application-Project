@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1079.0" style="-fx-background-color: #15213b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterEtudController">
+   <children>
+      <AnchorPane prefHeight="636.0" prefWidth="305.0" style="-fx-background-color: #000000;" />
+      <TextField fx:id="nom" layoutX="442.0" layoutY="149.0" />
+      <TextField fx:id="prenom" layoutX="442.0" layoutY="293.0" />
+      <ChoiceBox fx:id="filiere" layoutX="767.0" layoutY="149.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="semestre" layoutX="767.0" layoutY="293.0" prefWidth="150.0" />
+      <Label layoutX="495.0" layoutY="101.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="248.0" text="prenom" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="816.0" layoutY="101.0" text="Filière" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" layoutY="248.0" text="Semestre" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="640.0" fitWidth="982.0" layoutX="-656.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image%20java/0_F95wvRoRjeEadaVi.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="620.0" layoutY="411.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="26.0" prefWidth="117.0" text="Ajouter" />
+      <Label layoutX="102.0" layoutY="239.0" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="292.0" text="Etudiant" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

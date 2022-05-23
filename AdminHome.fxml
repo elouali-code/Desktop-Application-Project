@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminHomeController">
+   <children>
+      <MenuBar layoutY="2.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="1079.0" style="-fx-background-color: #0185d7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Accueil">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#profil" text="Profil" />
+                  <MenuItem mnemonicParsing="false" onAction="#bienvenue" text="Bienvenue" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Etudiants">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ajouter" text="Ajouter" />
+                  <MenuItem mnemonicParsing="false" onAction="#modifier" text="Modifier" />
+                  <MenuItem mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Autres">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#securite" text="Paramètres Sécurité" />
+                  <MenuItem mnemonicParsing="false" onAction="#deco" text="Deconnexion" />
+                  <MenuItem mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+               </items>
+            </Menu>
+         </menus>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </MenuBar>
+      <AnchorPane fx:id="rootPane" layoutY="26.0" prefHeight="636.0" prefWidth="1079.0" style="-fx-background-color: #17203d;">
+         <children>
+            <AnchorPane layoutX="529.0" layoutY="-12.0" prefHeight="661.0" prefWidth="550.0" style="-fx-background-color: #0185D7;">
+               <children>
+                  <ImageView fitHeight="409.0" fitWidth="563.0" layoutX="-13.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/image%20java/bienvenu_Admonistrateurr-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="542.0" fitWidth="551.0" layoutX="-13.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/image%20java/Luxury%20Real%20Estate%20Logo2.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

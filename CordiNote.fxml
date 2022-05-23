@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1079.0" style="-fx-background-color: #15213b;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CordiNoteController">
+   <children>
+      <Line endX="22.0" endY="626.1922607421875" layoutX="579.0" layoutY="30.0" startX="22.0" startY="-35.38489532470703" AnchorPane.bottomAnchor="0.4999961853027344" AnchorPane.topAnchor="-0.4999961853027344" />
+      <TextField fx:id="Max" layoutX="366.0" layoutY="274.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="405.0" layoutY="130.0" text="Intervalle:" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="366.0" layoutY="356.0" mnemonicParsing="false" onAction="#chercherClicked" prefHeight="31.0" prefWidth="187.0" text="Chercher" />
+      <Label layoutX="631.0" layoutY="161.0" text="Nom :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="631.0" layoutY="201.0" text="prenom :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="IDLabel" layoutX="758.0" layoutY="121.0" prefHeight="27.0" prefWidth="231.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenomLabel" layoutX="759.0" layoutY="196.0" prefHeight="27.0" prefWidth="231.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="94.0" fitWidth="96.0" layoutX="957.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image%20java/profil.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="640.0" prefWidth="303.0" style="-fx-background-color: #000000;" />
+      <Button fx:id="enregistrer" disable="true" layoutX="807.0" layoutY="542.0" mnemonicParsing="false" onAction="#enregistrer" prefHeight="31.0" prefWidth="113.0" text="Enregistrer" />
+      <ImageView fitHeight="640.0" fitWidth="962.0" layoutX="-654.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image%20java/0_F95wvRoRjeEadaVi.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="253.0" text="Note" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="320.0" text="Etudiant" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Min" layoutX="366.0" layoutY="209.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="316.0" layoutY="212.0" text="Min:" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="274.0" text="Max:" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="631.0" layoutY="121.0" text="ID :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomLabel" layoutX="758.0" layoutY="161.0" prefHeight="27.0" prefWidth="231.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="module" disable="true" layoutX="625.0" layoutY="282.0" prefHeight="146.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="nommodule" prefWidth="208.800048828125" text="Nom Module" />
+          <TableColumn fx:id="notemodule" minWidth="0.0" prefWidth="112.79998779296875" text="Note Module" />
+            <TableColumn fx:id="validation" minWidth="0.0" prefWidth="119.19998779296873" text="Validation" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="modulechoix" disable="true" layoutX="667.0" layoutY="470.0" prefWidth="150.0" />
+      <TextField fx:id="notenew" disable="true" layoutX="874.0" layoutY="470.0" />
+      <Label layoutX="703.0" layoutY="438.0" text="Module :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="920.0" layoutY="438.0" text="Note :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="precedent" disable="true" layoutX="666.0" layoutY="542.0" mnemonicParsing="false" onAction="#precedent" prefHeight="26.0" prefWidth="74.0" text="Précédent" />
+      <Button fx:id="suivant" disable="true" layoutX="989.0" layoutY="542.0" mnemonicParsing="false" onAction="#suivant" prefHeight="26.0" prefWidth="74.0" text="Suivant" />
+      <Label layoutX="634.0" layoutY="241.0" prefHeight="27.0" prefWidth="137.0" text="note Generale : " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="noteLabel" layoutX="771.0" layoutY="241.0" prefHeight="27.0" prefWidth="231.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

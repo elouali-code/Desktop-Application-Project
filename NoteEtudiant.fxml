@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1079.0" style="-fx-background-color: #15213b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NoteEtudiantController">
+   <children>
+      <Label fx:id="nomLabel" layoutX="866.0" layoutY="168.0" prefHeight="27.0" prefWidth="206.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="prenomLabel" layoutX="866.0" layoutY="214.0" prefHeight="27.0" prefWidth="206.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <AnchorPane prefHeight="640.0" prefWidth="298.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="90.0" layoutY="237.0" text="Note" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="640.0" fitWidth="982.0" layoutX="-663.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/image%20java/0_F95wvRoRjeEadaVi.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="311.0" text="Etudiant" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="256.0" text="Note" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="469.0" layoutY="15.0" prefHeight="612.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="36.0" text="ID" />
+          <TableColumn fx:id="nom" prefWidth="95.20001220703125" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="125.5999755859375" text="Prénom" />
+            <TableColumn fx:id="matiere" prefWidth="128.800048828125" text="Matière" />
+            <TableColumn fx:id="tp" prefWidth="67.199951171875" text="Note TP" />
+            <TableColumn fx:id="cc" prefWidth="69.5999755859375" text="Note CC" />
+            <TableColumn fx:id="exam" prefWidth="76.800048828125" text="Note Exam" />
+        </columns>
+      </TableView>
+      <Label layoutX="333.0" layoutY="255.0" prefHeight="46.0" prefWidth="99.0" text="Matière" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="matiereChoix" layoutX="307.0" layoutY="318.0" onAction="#afficher" prefWidth="150.0" />
+   </children>
+</AnchorPane>
