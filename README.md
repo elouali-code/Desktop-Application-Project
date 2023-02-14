@@ -1,5 +1,7 @@
 # Desktop app project
 
+
+
 ``` sh
 
 A desktop application with Java that manages students
@@ -10,4 +12,4 @@ Tasks to perform:
 - establish the connection with the database with mysql connector/j
 - Modeling with UML language
 
-``` sh
+
